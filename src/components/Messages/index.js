@@ -2,10 +2,10 @@ import './style.scss';
 import React from "react";
 import { messages } from '../../consts';
 import { createRandomTitle, getRandMessage } from '../../utils';
-import { MessagesItem } from '../MessagesItem';
+import { MessagesItem } from './MessagesItem';
 
 const message = getRandMessage(messages);
-const title = createRandomTitle(100, 1, 'Title');
+const title = createRandomTitle(6, 1, 'Title');
 
 export const Messages = () => {
     return(
