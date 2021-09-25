@@ -1,15 +1,53 @@
-.messages {
-    padding: 50px 0;
-}
-
 .message {
     background-color: #f4f4f4;
     padding: 15px;
-    width: 100%;
+    width: fit-content;
     border-radius: 10px;
+    float: right;
+    clear: both;
+    margin: 5px 0;
 
     &-title {
         margin-bottom: 10px;
     }
 
+    &-robo {
+        float: left;
+        clear: both;
+        background: #dcdcdc;
+    }
+
+}
+
+.form-item {
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    margin: 50px 0;
+
+    input {
+        margin-right: 30px;
+    }
+
+    .text_field {
+        padding: 5px;
+        border: none;
+        border-bottom: 1px solid #999;
+        width: 450px;
+    }
+
+    .text_field:focus,
+    .text_field:active {
+        border: none;
+        outline: none;
+        border-bottom: 1px solid #999;
+    }
+
+    .btn {
+        background: none;
+        padding: 5px 10px;
+        border-radius: 4px;
+        border: 1px solid black;
+        cursor: pointer
+    }
 }

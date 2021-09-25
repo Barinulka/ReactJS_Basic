@@ -1,1 +1,1 @@
-export const messages = ['Hello', 'ReactJs', 'JavaScript', 'Hello there', 'Hello world', 'I\'m here'];
+export const arrMess = ['Hello', 'ReactJs', 'JavaScript', 'Hello there', 'Hello world', 'I\'m here'];
