@@ -1,0 +1,1 @@
+export const messages = ['Hello', 'ReactJs', 'JavaScript', 'Hello there', 'Hello world', 'I\'m here'];
