@@ -1,11 +1,9 @@
 import '../style.scss';
 import React from "react";
+import { Message } from './Message';
 
-export const MessagesItem = ({title, message}) => {
-    return(
-        <div className="message">
-            <h2 className="message-title">{title}</h2>
-            <p className="message-text">{message}</p>
-        </div>
-    )
+export const MessagesItem = ({ messages }) => {
+    return messages.map((mess) => (
+        <Message author={mess.author} text={mess.text} key={mess.id} />
+    ));
 }
