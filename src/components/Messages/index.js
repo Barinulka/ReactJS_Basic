@@ -2,8 +2,8 @@ import './style.scss';
 import React, { useCallback, useEffect, useState } from "react";
 import { arrMess } from '../../consts';
 import { getRandMessage } from '../../utils';
-import { MessagesItem } from './MessagesItem';
 import { MessagesForm } from './MessagesForm';
+import { MessagesList } from './MessagesList';
 
 
 
@@ -37,7 +37,7 @@ export const Messages = () => {
                     <MessagesForm onSend={ handleSend }/>
                 </div>
                 <div className="messages">
-                    <MessagesItem messages={ messages } />
+                    <MessagesList messages={ messages } />
                 </div>
             </div>
             
