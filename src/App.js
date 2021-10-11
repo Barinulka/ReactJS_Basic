@@ -1,13 +1,19 @@
+import { BrowserRouter } from 'react-router-dom';
 import './App.scss';
 import { Header } from './components/Header';
-import { Messages } from './components/Messages';
+import { Layout } from './components/Layout';
+import { Routes } from './routes/Routes';
 
 function App() {
   return (
-    <div className="App">
-      <Header />
-      <Messages />
-    </div>
+    <BrowserRouter>
+      <div className="App">
+        <Header />
+        <Layout>
+          <Routes />
+        </Layout>
+      </div>
+    </BrowserRouter>
   );
 }
 
