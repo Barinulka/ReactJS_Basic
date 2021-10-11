@@ -1,15 +1,19 @@
+import { BrowserRouter } from 'react-router-dom';
 import './App.scss';
-import { Routers } from './components/Routers';
-// import { Header } from './components/Header';
-// import { Messages } from './components/Messages';
+import { Header } from './components/Header';
+import { Layout } from './components/Layout';
+import { Routes } from './routes/Routes';
 
 function App() {
   return (
-    <div className="App">
-      {/* <Header /> */}
-      {/* <Messages /> */}
-      <Routers />
-    </div>
+    <BrowserRouter>
+      <div className="App">
+        <Header />
+        <Layout>
+          <Routes />
+        </Layout>
+      </div>
+    </BrowserRouter>
   );
 }
 
